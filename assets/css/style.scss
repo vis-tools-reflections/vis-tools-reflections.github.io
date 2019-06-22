@@ -1,13 +1,108 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# The main scss file
 ---
 
-@import "minima";
+@import "reset.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap");
+$base-font-family: "Source Serif Pro", serif;
+$content-width: 960px;
+
+body {
+  font-family: $base-font-family;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+small {
+  font-size: 0.9em;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+code {
+  font-family: monospace;
+}
+
+p {
+  line-height: 1.5em;
+  text-align: justify;
+  hyphens: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+button {
+  border: none;
+  margin: 0;
+  margin-top: 5px;
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #aaa;
+  &:hover {
+    border-color: black;
+  }
+}
+
+.page-content {
+  width: $content-width;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+figure,
+.video-wrapper {
+  width: 100%;
+  background: #f4f4f4;
+  // border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  margin: 1em 0;
+}
 
 .video-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
+  font-size: 14px;
+  p {
+    text-align: left;
+    hyphens: none;
+  }
 
   .video-item {
     display: flex;
