@@ -4,12 +4,12 @@
 
 @import "reset.scss";
 
-@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap");
-$base-font-family: "Source Serif Pro", serif;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
+
 $content-width: 960px;
 
 body {
-  font-family: $base-font-family;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
 }
 
@@ -19,15 +19,23 @@ h3,
 h4 {
   margin-top: 1.5em;
   margin-bottom: 1em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 2em;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-top: -1em;
+  font-weight: 300;
 }
 
 h2 {
   font-size: 1.5em;
+  font-weight: 400;
 }
 
 h3 {
@@ -45,11 +53,102 @@ i {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 code {
   font-family: monospace;
+}
+
+table {
+  th,
+  td {
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+  th {
+    font-weight: 700;
+  }
+  th:first-child,
+  td:first-child {
+    font-weight: 700;
+  }
+  td:first-child,
+  th:first-child {
+    border-left: none;
+  }
+  td:last-child,
+  th:last-child {
+    border-right: none;
+  }
+  th {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  tr:last-child td {
+    border-bottom: 2px solid black;
+  }
+
+  tr.row-with-video {
+    td {
+      border-bottom: none;
+    }
+  }
+  tr.row-video {
+    td {
+      border-top: none;
+    }
+  }
+
+  .what,
+  .how {
+    &:before {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-right: 3px;
+      vertical-align: top;
+      position: relative;
+      top: 1px;
+      content: " ";
+      background-size: 100%;
+    }
+  }
+  .what {
+    &:before {
+      background-image: url(/images/what.png);
+    }
+  }
+  .how {
+    &:before {
+      background-image: url(/images/how.png);
+    }
+  }
+  td small {
+    margin-top: 5px;
+    display: block;
+    font-weight: normal;
+  }
+}
+
+.table-summary {
+  th:first-child,
+  td:first-child {
+    width: 192px;
+  }
+  th:not(:first-child) {
+    width: 256px;
+  }
+}
+
+.table-terminology {
+  th:first-child,
+  td:first-child {
+    width: 480px;
+  }
+  th:not(:first-child) {
+    width: 160px;
+  }
 }
 
 p {
@@ -83,6 +182,7 @@ button {
 img,
 video {
   max-width: 100%;
+  background: white;
 }
 
 figure,
@@ -141,4 +241,12 @@ figure,
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+}
+
+hr {
+  border: none;
+  height: 0;
+  margin: 1em 0;
+  margin-top: 2em;
+  border-top: 1px solid #cccccc;
 }
