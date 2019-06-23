@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Supplementary Material for Critical Reflections of Visualization Authoring Systems
 ---
 
 # Critical Reflections of Visualization Authoring Systems
