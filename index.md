@@ -157,7 +157,9 @@ layout: page
   </tbody>
 </table>
 
-<small>\* Lyra uses “guide” to refer to axes and legends together.</small>
+<div class="notes">
+* Lyra uses “guide” to refer to axes and legends together.
+</div>
 
 ## Summary of Main Components for the Three Systems
 
@@ -360,7 +362,11 @@ layout: page
   </tbody>
 </table>
 
-<small>\* In Lyra, a user specifies layouts via data transformations.</small>
+<div class="notes">
+  <div class="what" style="display: inline">what is supported</div>
+  <div class="how" style="display: inline; margin-left: 0.3em;">how to achieve the desired outcome</div>
+  <div>* In Lyra, a user specifies layouts via data transformations.</div>
+</div>
 
 <script type="text/javascript">
 d3.selectAll("video").each(function() {

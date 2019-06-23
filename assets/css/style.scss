@@ -61,6 +61,7 @@ code {
 }
 
 table {
+  line-height: 1.2em;
   th,
   td {
     border: 1px solid black;
@@ -99,31 +100,6 @@ table {
       border-top: none;
     }
   }
-
-  .what,
-  .how {
-    &:before {
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      margin-right: 3px;
-      vertical-align: top;
-      position: relative;
-      top: 1px;
-      content: " ";
-      background-size: 100%;
-    }
-  }
-  .what {
-    &:before {
-      background-image: url(/images/what.png);
-    }
-  }
-  .how {
-    &:before {
-      background-image: url(/images/how.png);
-    }
-  }
   td small {
     margin-top: 5px;
     display: block;
@@ -149,6 +125,37 @@ table {
   th:not(:first-child) {
     width: 160px;
   }
+}
+
+.what,
+.how {
+  &:before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+    content: " ";
+    background-size: 100%;
+  }
+}
+.what {
+  &:before {
+    background-image: url(/images/what.png);
+  }
+}
+.how {
+  &:before {
+    background-image: url(/images/how.png);
+  }
+}
+
+.notes {
+  margin: 1em 0;
+  font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 p {
