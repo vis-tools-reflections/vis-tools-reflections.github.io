@@ -219,32 +219,32 @@ Click on a thumbnail to watch a corresponding video clip
     <tr>
       <td>Instantiation of Path Points & Path Segments</td>
       <td>
-        <div class="how">map data values to the x, y position of points</div>
+        <div class="how">map data values to point x, y positions</div>
       </td>
       <td>
-        <div class="how">partition line marks; draw with Pen Tool</div>
+        <div class="how">partition line marks; draw with Pen tool</div>
       </td>
       <td>
-        <div class="how">connect glyphs on canvas using “linking” tool</div>
+        <div class="how">connect glyphs using the Linking tool</div>
       </td>
     </tr>
     <tr>
       <td>Links between Glyphs</td>
       <td>
-        <div class="how">add a force-directed layout transformation</div>
+        <div class="how">add a force-directed layout transform</div>
       </td>
       <td>
         not supported
       </td>
       <td>
-        <div class="how">connect glyphs on canvas using “linking” tool</div>
+        <div class="how">connect glyphs using the Linking tool</div>
       </td>
     </tr>
     <tr>
       <td>Data Scoping for Glyphs</td>
       <td>
         <div class="what">one or more tuples per glyph</div>
-        <div class="how">no user action needed for one tuple per glyph; ‘group by’ for multiple tuples per glyph</div>
+        <div class="how">no user action needed for one tuple per glyph; “group by” for multiple tuples per glyph</div>
       </td>
       <td>
         <div class="what">one or more tuples per glyph</div>
@@ -252,7 +252,7 @@ Click on a thumbnail to watch a corresponding video clip
       </td>
       <td>
         <div class="what">one or more tuples per glyph</div>
-        <div class="how">no user action needed for one tuple per glyph; ‘group by’ for multiple tuples per glyph</div>
+        <div class="how">no user action needed for one tuple per glyph; “group by” for multiple tuples per glyph</div>
       </td>
     </tr>
     <tr class="row-with-video">
@@ -280,11 +280,11 @@ Click on a thumbnail to watch a corresponding video clip
         <div class="how">a scale is created when a data binding is applied; a scale can be created manually, and exists independently from data binding</div>
       </td>
       <td>
-        <div class="what">scales for categorical, temporal numerical data</div>
+        <div class="what">scales for categorical, temporal, and numerical data</div>
         <div class="how">a scale is created when a data binding is applied; users choose whether to reuse or merge a scale from a previous data binding</div>
       </td>
       <td>
-        <div class="what">scales for categorical, temporal numerical data</div>
+        <div class="what">scales for categorical, temporal, and numerical data</div>
         <div class="how">a scale is created when a data binding is applied; by default, reuses a scale from a previous data binding</div>
       </td>
     </tr>
@@ -309,26 +309,27 @@ Click on a thumbnail to watch a corresponding video clip
     <tr>
       <td>Relative Layout</td>
       <td>
-        <div class="how">drag a target mark onto a host marks anchor</div>
+        <div class="how">drag a target mark to a host mark’s anchor</div>
       </td>
       <td>
-        <div class="how">specify through grouping, distribution & alignment</div>
+        <div class="how">specify through grouping, distribution, and alignment</div>
       </td>
       <td>
-        <div class="how">specify through anchors, guides, handles, margins & alignment</div>
+        <div class="how">specify through anchors, guides, handles, margins, and alignment</div>
       </td>
     </tr>
     <tr class="row-with-video">
       <td>Layout in a Collection</td>
       <td>
-        <div class="how">not supported*</div>
+        <div class="what">stacking, force-directed, cartographic projections, and pie charts</div>
+        <div class="how">add a data transformation via button-click</div>
       </td>
       <td>
-        <div class="what">grid, stacking</div>
+        <div class="what">grid and stacking</div>
         <div class="how">apply repeat/ partition actions</div>
       </td>
       <td>
-        <div class="what">grid, stacking, circle packing</div>
+        <div class="what">grid, stacking, and circle packing</div>
         <div class="how">use scaffolds and sub-layouts to position glyphs</div>
       </td>
     </tr>
