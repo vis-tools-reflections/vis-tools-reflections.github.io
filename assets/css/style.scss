@@ -180,6 +180,38 @@ button {
   }
 }
 
+.video-thumbnail {
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: 100%;
+  cursor: pointer;
+  position: relative;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+
+  .play-overlay {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDgwIDgwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNjQuNjIyLDIuNDExSDE0Ljk5NWMtNi42MjcsMC0xMiw1LjM3My0xMiwxMnY0OS44OTdjMCw2LjYyNyw1LjM3MywxMiwxMiwxMmg0OS42MjdjNi42MjcsMCwxMi01LjM3MywxMi0xMlYxNC40MTEgICBDNzYuNjIyLDcuNzgzLDcxLjI0OSwyLjQxMSw2NC42MjIsMi40MTF6IE0yNC4xMjUsNjMuOTA2VjE1LjA5M0w2MSwzOS4xNjhMMjQuMTI1LDYzLjkwNnoiPjwvcGF0aD48L2c+PC9zdmc+");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    filter: invert(40%);
+  }
+
+  &:hover {
+    opacity: 1;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    .play-overlay {
+      filter: none;
+    }
+  }
+}
+
 .page-content {
   width: $content-width;
   overflow: hidden;

@@ -163,6 +163,10 @@ layout: page
 
 ## Summary of Main Components for the Three Systems
 
+<div class="notes">
+Click on a thumbnail to watch a corresponding video clip
+</div>
+
 <table class="table-summary">
   <thead>
     <tr>
@@ -190,9 +194,9 @@ layout: page
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><video src="videos/CreateMark-L.mp4"></video></td>
-      <td><video src="videos/CreateMark-D.mp4"></video></td>
-      <td><video src="videos/CreateMark-C.mp4"></video></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-L.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-D.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-C.jpg)"><div class="play-overlay"></div></div></td>
     </tr>
     <tr class="row-with-video">
       <td>Glyph Composition</td>
@@ -208,9 +212,9 @@ layout: page
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><video src="videos/CreateText-L.mp4"></video></td>
-      <td><video src="videos/CreateText-D.mp4"></video></td>
-      <td><video src="videos/CreateText-C.mp4"></video></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-L.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-D.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-C.jpg)"><div class="play-overlay"></div></div></td>
     </tr>
     <tr>
       <td>Instantiation of Path Points & Path Segments</td>
@@ -265,9 +269,9 @@ layout: page
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><video src="videos/HeightMapping-L.mp4"></video></td>
-      <td><video src="videos/HeightMapping-D.mp4"></video></td>
-      <td><video src="videos/HeightMapping-C.mp4"></video></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-L.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-D.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-C.jpg)"><div class="play-overlay"></div></div></td>
     </tr>
     <tr class="row-with-video">
       <td>Scales</td>
@@ -286,9 +290,9 @@ layout: page
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><video src="videos/ColorMapping-L.mp4"></video></td>
-      <td><video src="videos/ColorMapping-D.mp4"></video></td>
-      <td><video src="videos/ColorMapping-C.mp4"></video></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-L.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-D.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-C.jpg)"><div class="play-overlay"></div></div></td>
     </tr>
     <tr>
       <td>Axes & Legends</td>
@@ -330,9 +334,9 @@ layout: page
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><video src="videos/SetupLayout-L.mp4"></video></td>
-      <td><video src="videos/SetupLayout-D.mp4"></video></td>
-      <td><video src="videos/SetupLayout-C.mp4"></video></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-L.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-D.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-C.jpg)"><div class="play-overlay"></div></div></td>
     </tr>
     <tr>
       <td>Nested Layout</td>
@@ -369,13 +373,14 @@ layout: page
 </div>
 
 <script type="text/javascript">
-d3.selectAll("video").each(function() {
-  var videoElement = this;
-  d3.select(videoElement).on("click", function() {
+d3.selectAll(".video-thumbnail").each(function() {
+  var element = this;
+  d3.select(element).on("click", function() {
+    element.blur();
     var wrapper = d3.select("body").append("div").attr("class", "popup-video-wrapper");
     var inner = wrapper.append("div").attr("class", "popup-video");
     var popupVideo = inner.append("video")
-      .attr("src", videoElement.src)
+      .attr("src", element.src)
       .attr("autoplay", true)
       .attr("controls", true);
     inner.on("click", function(e) {
@@ -392,6 +397,11 @@ d3.selectAll("video").each(function() {
       }
     };
     window.addEventListener("keydown", onEscape);
+  });
+  d3.select(element).on("keypress", function() {
+    if(d3.event.keyCode == 13) {
+      d3.select(element).on("click")();
+    }
   });
 });
 </script>
