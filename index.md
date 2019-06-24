@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Critical Reflections of Visualization Authoring Systems
+# Critical Reflections on Visualization Authoring Systems
 
 <div class="subtitle">Supplemental Material</div>
 
