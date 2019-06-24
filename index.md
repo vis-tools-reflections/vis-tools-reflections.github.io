@@ -194,9 +194,9 @@ Click on a thumbnail to watch a corresponding video clip
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-L.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-D.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-C.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-L.jpg)" data-src="videos/CreateMark-L.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-D.jpg)" data-src="videos/CreateMark-D.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateMark-C.jpg)" data-src="videos/CreateMark-C.mp4"><div class="play-overlay"></div></div></td>
     </tr>
     <tr class="row-with-video">
       <td>Glyph Composition</td>
@@ -212,9 +212,9 @@ Click on a thumbnail to watch a corresponding video clip
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-L.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-D.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-C.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-L.jpg)" data-src="videos/CreateText-L.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-D.jpg)" data-src="videos/CreateText-D.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/CreateText-C.jpg)" data-src="videos/CreateText-C.mp4"><div class="play-overlay"></div></div></td>
     </tr>
     <tr>
       <td>Instantiation of Path Points & Path Segments</td>
@@ -269,9 +269,9 @@ Click on a thumbnail to watch a corresponding video clip
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-L.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-D.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-C.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-L.jpg)" data-src="videos/HeightMapping-L.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-D.jpg)" data-src="videos/HeightMapping-D.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/HeightMapping-C.jpg)" data-src="videos/HeightMapping-C.mp4"><div class="play-overlay"></div></div></td>
     </tr>
     <tr class="row-with-video">
       <td>Scales</td>
@@ -290,9 +290,9 @@ Click on a thumbnail to watch a corresponding video clip
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-L.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-D.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-C.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-L.jpg)" data-src="videos/ColorMapping-L.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-D.jpg)" data-src="videos/ColorMapping-D.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/ColorMapping-C.jpg)" data-src="videos/ColorMapping-C.mp4"><div class="play-overlay"></div></div></td>
     </tr>
     <tr>
       <td>Axes & Legends</td>
@@ -335,9 +335,9 @@ Click on a thumbnail to watch a corresponding video clip
     </tr>
     <tr class="row-video">
       <td></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-L.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-D.jpg)"><div class="play-overlay"></div></div></td>
-      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-C.jpg)"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-L.jpg)" data-src="videos/SetupLayout-L.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-D.jpg)" data-src="videos/SetupLayout-D.mp4"><div class="play-overlay"></div></div></td>
+      <td><div class="video-thumbnail" tabindex="0" style="background-image: url(videos/SetupLayout-C.jpg)" data-src="videos/SetupLayout-C.mp4"><div class="play-overlay"></div></div></td>
     </tr>
     <tr>
       <td>Nested Layout</td>
@@ -376,12 +376,13 @@ Click on a thumbnail to watch a corresponding video clip
 <script type="text/javascript">
 d3.selectAll(".video-thumbnail").each(function() {
   var element = this;
+  var src = element.getAttribute("data-src");
   d3.select(element).on("click", function() {
     element.blur();
     var wrapper = d3.select("body").append("div").attr("class", "popup-video-wrapper");
     var inner = wrapper.append("div").attr("class", "popup-video");
     var popupVideo = inner.append("video")
-      .attr("src", element.src)
+      .attr("src", src)
       .attr("autoplay", true)
       .attr("controls", true);
     inner.on("click", function(e) {
