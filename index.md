@@ -164,7 +164,8 @@ layout: page
 ## Summary of Main Components for the Three Systems
 
 <div class="notes">
-Click on a thumbnail to watch a corresponding video clip
+Video clips illustrate how to create a version of the Wall Street Journal's <a href="http://graphics.wsj.com/elections/2016/field-guide-red-blue-america/">A Field Guide to Red and Blue America</a>, originally designed by Randy Yeip, Stuart A. Thompson and Will Welch.
+Click on a thumbnail to watch the corresponding video clip.
 </div>
 
 <table class="table-summary">
